@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FurniScan</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="splashscreen">splashscreen</string>
+    <string name="start">start</string>
+    <string name="title_1">Discover</string>
+    <string name="desc_1">Lorem Ipsum</string>
+    <string name="title_2">New Arrival</string>
+    <string name="desc_2">Lorem Ipsum</string>
+    <string name="title_3">New Discover</string>
+    <string name="desc_3">Lorem Ipsum</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="account">Don\'t have an account?</string>
+    <string name="username">Username</string>
+    <string name="your_username">Your Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="your_confirm_password">Confirm Password</string>
+    <string name="already">Already have an account?</string>
+</resources>
