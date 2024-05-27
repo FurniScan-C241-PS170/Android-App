@@ -23,4 +23,7 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="your_confirm_password">Confirm Password</string>
     <string name="already">Already have an account?</string>
+    <string name="home">Home</string>
+    <string name="wishlist">wishlist</string>
+    <string name="menu_scan">Scan</string>
 </resources>

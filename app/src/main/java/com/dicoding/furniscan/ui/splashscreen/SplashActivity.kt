@@ -6,9 +6,6 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.dicoding.furniscan.MainActivity
 import com.dicoding.furniscan.R
 import com.dicoding.furniscan.ui.onboarding.OnBoardingActivity
 
