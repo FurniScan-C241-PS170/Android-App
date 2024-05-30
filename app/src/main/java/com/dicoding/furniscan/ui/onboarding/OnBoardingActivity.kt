@@ -21,6 +21,8 @@ class OnBoardingActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+
+
         binding.btnStart.setOnClickListener {
             startActivity(Intent(this, WelcomeActivity::class.java))
         }

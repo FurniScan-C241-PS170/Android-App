@@ -26,4 +26,6 @@
     <string name="home">Home</string>
     <string name="wishlist">wishlist</string>
     <string name="menu_scan">Scan</string>
+    <string name="desc_welcome">go fast, go scan</string>
+    <string name="search">search</string>
 </resources>
