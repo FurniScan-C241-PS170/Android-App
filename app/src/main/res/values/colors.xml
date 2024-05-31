@@ -151,7 +151,6 @@
     <color name="md_theme_surfaceContainer_highContrast">#F1EDEC</color>
     <color name="md_theme_surfaceContainerHigh_highContrast">#EBE7E7</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#E5E2E1</color>
-    <color name="grey">DEDEDE</color>
 
 
 </resources>
