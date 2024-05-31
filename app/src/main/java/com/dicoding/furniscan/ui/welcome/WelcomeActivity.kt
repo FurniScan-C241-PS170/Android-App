@@ -44,13 +44,14 @@ class WelcomeActivity : AppCompatActivity() {
         val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(500)
         val title = ObjectAnimator.ofFloat(binding.tvTitle, View.ALPHA, 1f).setDuration(500)
         val desc = ObjectAnimator.ofFloat(binding.tvDescription, View.ALPHA, 1f).setDuration(500)
+        val image = ObjectAnimator.ofFloat(binding.ivWelcome, View.ALPHA, 1f).setDuration(500)
 
         val together = AnimatorSet().apply {
             playTogether(signup, login )
         }
 
         AnimatorSet().apply {
-            playSequentially(title, desc, together)
+            playSequentially(title, desc,image, together)
             start()
         }
     }

@@ -105,6 +105,7 @@ class ScanActivity : AppCompatActivity() {
                     intent.putExtra(EXTRA_CAMERAX_IMAGE, output.savedUri.toString())
                     startActivity(intent)
                 }
+
                 override fun onError(exc: ImageCaptureException) {
                     Toast.makeText(
                         this@ScanActivity,

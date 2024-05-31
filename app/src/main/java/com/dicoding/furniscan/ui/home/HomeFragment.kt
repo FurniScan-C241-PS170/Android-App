@@ -9,7 +9,6 @@ import com.dicoding.furniscan.R
 
 
 class HomeFragment : Fragment() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {

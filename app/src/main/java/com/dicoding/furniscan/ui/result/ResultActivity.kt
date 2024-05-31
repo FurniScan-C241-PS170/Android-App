@@ -40,11 +40,9 @@ class ResultActivity : AppCompatActivity() {
         val bottomSheetDialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.dialog_bottom, null)
 
-        // Dapatkan tinggi layar
         val displayMetrics = resources.displayMetrics
         val screenHeight = displayMetrics.heightPixels
 
-        // Atur tinggi BottomSheetDialog menjadi sama dengan tinggi layar
         val layoutParams = CoordinatorLayout.LayoutParams(
             CoordinatorLayout.LayoutParams.MATCH_PARENT,
             screenHeight
@@ -53,7 +51,6 @@ class ResultActivity : AppCompatActivity() {
 
         bottomSheetDialog.setContentView(view)
 
-        // Dapatkan BottomSheetBehavior dan atur isFitToContents menjadi false dan setExpandedOffset menjadi 0
         val bottomSheetBehavior = BottomSheetBehavior.from(view.parent as View)
         bottomSheetBehavior.isFitToContents = false
         bottomSheetBehavior.setExpandedOffset(0)

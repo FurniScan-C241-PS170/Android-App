@@ -26,6 +26,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun playAnimation() {
+        val image = ObjectAnimator.ofFloat(binding.ivSignup, View.ALPHA, 1f).setDuration(500)
         val title = ObjectAnimator.ofFloat(binding.tvSignup, View.ALPHA, 1f).setDuration(250)
         val descName = ObjectAnimator.ofFloat(binding.tvUsername, View.ALPHA, 1f).setDuration(250)
         val inputName = ObjectAnimator.ofFloat(binding.etlUsername, View.ALPHA, 1f).setDuration(250)
@@ -38,7 +39,7 @@ class SignupActivity : AppCompatActivity() {
         val signup = ObjectAnimator.ofFloat(binding.btnSignup, View.ALPHA, 1f).setDuration(250)
 
         AnimatorSet().apply {
-            playSequentially( title,descName,inputName,descEmail, inputEmail, descPassword, inputPassword, descConfirmPassword, inputConfirmPassword, signup)
+            playSequentially( image, title, descName,inputName,descEmail, inputEmail, descPassword, inputPassword, descConfirmPassword, inputConfirmPassword, signup)
             start()
         }
     }

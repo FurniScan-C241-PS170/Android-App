@@ -5,40 +5,52 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     tools:context=".ui.signup.SignupActivity">
+
+    <ImageView
+        android:id="@+id/iv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintBottom_toTopOf="@+id/tv_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/signup" />
 
     <TextView
         android:id="@+id/tv_signup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:alpha="0"
         android:text="@string/signup"
         android:textColor="@color/md_theme_primary"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:alpha="0"
-        tools:alpha="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/iv_signup"
+        tools:alpha="100"
+        tools:layout_editor_absoluteY="280dp" />
 
     <TextView
         android:id="@+id/tv_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="24dp"
+        android:alpha="0"
         android:text="@string/username"
         android:textColor="@color/md_theme_primary"
         android:textSize="14sp"
         android:textStyle="normal"
-        android:alpha="0"
-        tools:alpha="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_signup"
+        tools:alpha="100" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_username"
@@ -215,4 +227,6 @@
             android:text="@string/login" />
 
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
