@@ -28,4 +28,24 @@
     <string name="menu_scan">Scan</string>
     <string name="desc_welcome">go fast, go scan</string>
     <string name="search">search</string>
+    <string name="look_for_your_own_taste">look for you own taste</string>
+    <string name="categories">Categories</string>
+    <string name="see_all">See All</string>
+    <string name="all_items">All Items</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="login_success">login succes</string>
+    <string name="continue_dialog">continue</string>
+    <string name="signup_success">sign up succes</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="armchair">Arm Chair</string>
+    <string name="price">300$</string>
+    <string name="rating">4.7</string>
+    <string name="color">Color</string>
+    <string name="content_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur velit at massa vehicula, quis fringilla urna gravida.</string>
+    <string name="similar">Similar Products</string>
+    <string name="favorite">Favorite</string>
+    <string name="logout">logout</string>
+    <string name="are_your_sure">Are You Sure</string>
+    <string name="cancel">cancel</string>
 </resources>

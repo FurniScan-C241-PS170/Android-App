@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -15,6 +17,19 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        val properties = Properties()
+
+        val localPropertiesFile = project.rootProject.file("local.properties")
+
+        properties.load(localPropertiesFile.inputStream())
+        val baseUrl:String = properties.getProperty("BASE_URL")
+
+        buildConfigField(
+            "String",
+            "BASE_URL",
+            "\"$baseUrl\""
+        )
     }
 
     buildTypes {
@@ -34,6 +49,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
 
@@ -64,10 +80,32 @@ dependencies {
 
     //Material Design
     implementation(libs.material)
+    implementation("com.google.android.material:material:1.3.0-alpha03")
 
     //Camera X
     implementation(libs.androidx.camera.camera2)
     implementation(libs.camera.lifecycle)
     implementation(libs.camera.view)
+
+    //Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converterGson)
+    implementation(libs.loggingInterceptor)
+    implementation(libs.lifecycleRuntimeKtx)
+
+    //coroutines
+    implementation(libs.lifecycleViewModelKtx)
+    implementation(libs.coroutinesCore)
+    implementation(libs.lifecycleLivedataKtx)
+    implementation(libs.coroutinesAndroid)
+
+    //Datastore
+    implementation(libs.datastorePreferences)
+
+    //Tensorflow Lite
+    implementation(libs.tensorflowLiteTaskVision)
+    implementation(libs.tensorflowLiteMetadata)
+    implementation(libs.tensorflowLiteGpu)
+    implementation(libs.tensorflowLite)
 
 }

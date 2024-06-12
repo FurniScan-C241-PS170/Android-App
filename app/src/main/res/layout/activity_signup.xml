@@ -66,7 +66,7 @@
         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
         <com.dicoding.furniscan.ui.customview.MyEditText
-            android:id="@+id/ed_signup_email"
+            android:id="@+id/ed_signup_username"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/edit_text"
@@ -105,7 +105,7 @@
         app:startIconDrawable="@drawable/ic_baseline_email_24">
 
         <com.dicoding.furniscan.ui.customview.MyEditText
-            android:id="@+id/ed_login_email"
+            android:id="@+id/ed_signup_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/edit_text"
@@ -227,6 +227,18 @@
             android:text="@string/login" />
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

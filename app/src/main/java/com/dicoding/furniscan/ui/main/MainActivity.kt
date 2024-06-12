@@ -2,9 +2,18 @@ package com.dicoding.furniscan.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.dicoding.furniscan.R
+import com.dicoding.furniscan.ViewModelFactory
+import com.dicoding.furniscan.data.preference.TokenPreferences
+import com.dicoding.furniscan.data.preference.dataStore
 import com.dicoding.furniscan.databinding.ActivityMainBinding
 import com.dicoding.furniscan.ui.favorite.FavoriteFragment
 import com.dicoding.furniscan.ui.home.HomeFragment
@@ -18,16 +27,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         supportFragmentManager.beginTransaction()
             .replace(R.id.mainLayout, HomeFragment()).commit()
 
-        binding.bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        binding.bottomNavigationView.setOnItemSelectedListener{ item ->
             val newFragment: Fragment = when (item.itemId) {
                 R.id.item1 -> HomeFragment()
                 R.id.item3 -> FavoriteFragment()
                 else -> HomeFragment()
             }
-
 
             supportFragmentManager.beginTransaction()
                 .replace(R.id.mainLayout, newFragment)
@@ -35,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
             true
         }
+
 
         binding.fab.setOnClickListener {
             val intent = Intent(this, ScanActivity::class.java)

@@ -16,6 +16,18 @@ activity = "1.9.0"
 materialAlpha = "1.3.0-alpha03"
 cameraxVersion = "1.2.3"
 lottie = "6.4.0"
+tensorflowLiteTaskVision = "0.4.4"
+tensorflowLiteMetadata = "0.1.0"
+tensorflowLiteGpu = "2.9.0"
+tensorflowLite = "2.9.0"
+datastore = "1.1.1"
+retrofit = "2.9.0"
+converterGson = "2.9.0"
+loggingInterceptor = "4.11.0"
+lifecycleRuntimeKtx = "2.7.0"
+lifecycleViewModelKtx = "2.7.0"
+coroutinesCore = "1.7.3"
+coroutinesAndroid = "1.7.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +47,20 @@ androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.r
 camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraxVersion" }
 camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraxVersion" }
 lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+datastorePreferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+tensorflowLiteTaskVision = { module = "org.tensorflow:tensorflow-lite-task-vision", version.ref = "tensorflowLiteTaskVision" }
+tensorflowLiteMetadata = { module = "org.tensorflow:tensorflow-lite-metadata", version.ref = "tensorflowLiteMetadata" }
+tensorflowLiteGpu = { module = "org.tensorflow:tensorflow-lite-gpu", version.ref = "tensorflowLiteGpu" }
+tensorflowLite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converterGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
+loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+lifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+lifecycleViewModelKtx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewModelKtx" }
+lifecycleLivedataKtx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+coroutinesCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesCore" }
+coroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesAndroid" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

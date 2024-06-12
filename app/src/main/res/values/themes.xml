@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.FurniScan" parent="Theme.Material3.DayNight.NoActionBar">
 
+
         <item name="android:textViewStyle">@style/AppTextStyle</item>
         <item name="materialButtonStyle">@style/AppMaterialButtonStyle</item>
 
@@ -62,4 +63,6 @@
     <style name="AppMaterialButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="fontFamily">@font/poppins_regular</item>
     </style>
+
+
 </resources>
